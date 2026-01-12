@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Secure File Vault</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+<header>
+  <div class="brand">
+    Secure File Vault <span class="badge">Homepage</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="encrypt.html">Encrypt</a>
+    <a href="decrypt.html">Decrypt</a>
+    <a href="log.html">Logs</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Company File Encryption & Decryption System</h1>
+    <p>
+      A web-based vault to encrypt/decrypt any file type (PDF, DOCX, XLSX, images, ZIP, WORDS).
+      This prototype demonstrates user flow and UI only back-end cryptography will be added next.
+    </p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Encrypt a file</h2>
+      <p>Upload any file, set a password, and download an encrypted package.</p>
+      <div class="actions">
+        <a class="btn" href="encrypt.html">Go to Encrypt</a>
+        <a class="btn secondary" href="log.html">View Logs</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Decrypt a file</h2>
+      <p>Upload an encrypted file (.enc) and restore the original file securely.</p>
+      <div class="actions">
+        <a class="btn" href="decrypt.html">Go to Decrypt</a>
+        <a class="btn secondary" href="settings.html">Settings</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="learn">
+  <div class="card learn-card">
+    <h2>Learn the basics</h2>
+    <p>
+      Before using the vault, here’s a quick explanation so everyone understands what’s happening
+      when a file becomes encrypted and later decrypted.
+    </p>
+  </div>
+
+  <div class="learn-grid">
+    <div class="card learn-item">
+      <h3>What is Encryption?</h3>
+      <p class="muted">
+        Encryption converts readable data (plaintext) into an unreadable format (ciphertext) to
+        protect it from unauthorized access.
+      </p>
+    </div>
+
+    <div class="card learn-item">
+      <h3>What is Decryption?</h3>
+      <p class="muted">
+        Decryption converts encrypted data (ciphertext) back into its original readable format
+        (plaintext) using the correct key/password.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="education">
+  <div class="card education-card">
+    <h2>How Encryption & Decryption Works</h2>
+    <p class="muted">
+      This diagram shows how readable data is transformed into encrypted data and later restored
+      using the correct key and algorithm.
+    </p>
+
+    <div class="education-image-wrapper">
+      <img src="banner.jpg"
+           alt="Encryption and Decryption Process Diagram"
+           class="education-image">
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<script src="system.js"></script>
+</body>
+</html>

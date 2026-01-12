@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logs</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+<header>
+  <div class="brand">
+    Secure File Vault <span class="badge">Audit Logs</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="encrypt.html">Encrypt</a>
+    <a href="decrypt.html">Decrypt</a>
+    <a href="log.html">Logs</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Audit Logs (Demo)</h2>
+    <p>In production, these will come from the backend database.</p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>User</th>
+          <th>Action</th>
+          <th>File</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2026-01-08 10:02</td>
+          <td>user@company.com</td>
+          <td>Encrypt</td>
+          <td>proposal.pdf</td>
+          <td><span class="tag ok">SUCCESS</span></td>
+        </tr>
+        <tr>
+          <td>2026-01-08 10:05</td>
+          <td>user@company.com</td>
+          <td>Decrypt</td>
+          <td>proposal.pdf.enc</td>
+          <td><span class="tag err">FAILED</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<script src="system.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decrypt</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body data-page="decrypt">
+<header>
+  <div class="brand">
+    Secure File Vault <span class="badge">Decrypt</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="encrypt.html">Encrypt</a>
+    <a href="decrypt.html">Decrypt</a>
+    <a href="log.html">Logs</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Decrypt File</h2>
+    <p>Simulates decryption and returns a restored file back.</p>
+
+    <label for="file">Choose encrypted file (.enc)</label>
+    <input id="file" type="file" />
+
+    <label for="password">Password</label>
+
+<div class="password-wrapper">
+  <input
+    id="password"
+    type="password"
+    placeholder="Min 8 chars, Aa1@"
+  />
+  <button type="button" id="togglePassword" class="toggle-btn">
+    👁️
+  </button>
+</div>
+
+    <div class="actions">
+      <button id="decryptBtn">Decrypt</button>
+      <a class="btn secondary" href="encrypt.html">Go to Encrypt</a>
+    </div>
+
+    <div id="progress" class="progress"><div></div></div>
+    <div id="status" class="status"></div>
+  </div>
+</main>
+
+<script src="system.js"></script>
+</body>
+</html>

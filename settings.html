@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+<header>
+  <div class="brand">
+    Secure File Vault <span class="badge">Settings</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="encrypt.html">Encrypt</a>
+    <a href="decrypt.html">Decrypt</a>
+    <a href="log.html">Logs</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Security Policies (Demo)</h2>
+    <p>These are UI-only for now. Later we enforce them in the backend.</p>
+
+    <div class="row">
+      <div>
+        <label>Max file size</label>
+        <select>
+          <option>50 MB</option>
+          <option selected>200 MB</option>
+          <option>500 MB</option>
+        </select>
+      </div>
+      <div>
+        <label>Password policy</label>
+        <input type="text" value="Min 12 chars, include number (future enforcement)" />
+      </div>
+    </div>
+
+    <label>Encryption mode</label>
+    <select>
+      <option selected>Password-based (Argon2id + AES-GCM)</option>
+      <option>Enterprise (KMS) - future</option>
+    </select>
+
+    <div class="actions">
+      <button disabled>Save (Demo)</button>
+      <a class="btn secondary" href="index.html">Back</a>
+    </div>
+  </div>
+</main>
+<script src="system.js"></script>
+</body>
+</html>
